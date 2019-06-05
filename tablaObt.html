@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Recuperar datos de celdas en una fila</title>
+	<script src="js/jquery-1-12-3.min.js" charset="utf-8"></script>
+
+<style type="text/css">
+/*<![CDATA[*/
+tr{
+background: cyan;
+}
+/*]]>*/
+</style>
+<script type="text/javascript">
+//<![CDATA[
+
+
+function valor_celda(celda){
+
+//	alert(celda.innerHTML);
+	var variable = celda.innerHTML;
+	console.log(variable);
+}
+
+$('#tab').click(function(){
+
+var tags_td = new Array();
+var tags_td=document.getElementsByTagName('td');
+for (i=0; i<tags_td.length; i++) {
+            if (tags_td[i].addEventListener) {   // IE9 y el resto
+                tags_td[i].addEventListener ("click", function () {valor_celda(this)}, false);
+            } 
+            else {
+                if (tags_td[i].attachEvent) {    // IE9 -
+                    tags_td[i].attachEvent ('onclick',  function () {valor_celda(this)}, false);
+                }
+            }
+}
+
+});
+
+/*window.onload = function(){
+var tags_td = new Array();
+var tags_td=document.getElementsByTagName('td');
+for (i=0; i<tags_td.length; i++) {
+            if (tags_td[i].addEventListener) {   // IE9 y el resto
+                tags_td[i].addEventListener ("click", function () {valor_celda(this)}, false);
+            } 
+            else {
+                if (tags_td[i].attachEvent) {    // IE9 -
+                    tags_td[i].attachEvent ('onclick',  function () {valor_celda(this)}, false);
+                }
+            }
+}
+}*/
+//]]>
+</script>
+</head>
+<body>
+<table border="1" width="50%" id="tab">
+<tr>
+<td>celda 1</td><td>celda 2</td>
+</tr>
+<tr>
+<td>espe</td><td>celda 4</td>
+</tr>
+<tr>
+<td>rafa</td><td>celda 6</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+img{/* Maximo tamaño de la imagen **/
+	max-width: 80%;
+}
+
+/* cuando lleva un punto es una clase nueva*/
+.quitar-float{
+	float: none;
+}
+
+.espacio-arriba{
+	margin-top: 50px;
+}
+
+.grande{
+	font-size: 3em;
+}
+
+.azul1{
+	color: #6798FF;
+}
+
+a{
+	color: #68C2E8;
+}
+
+.espacio-derecha{
+	margin-right: 1em;
+}
+
+
+/*clases para usar los google fonts*/
+.lato{
+	font-family: 'Lato', sans-serif;
+}
+
+.pacifico{
+	font-family: 'Pacifico', cursive;
+}
+
+/* CLASES DE MENU.HTML*/
+.no-lista li{ 
+	list-style-type: none;
+}
+
+.no-lista{
+	padding: 0px;
+	margin: 0px;
+}
+
+.se-gris{
+	background-color: #eee;
+}
+
+.padding-largo{
+	padding: 5px 10px;  
+}
+
+.inline-block{
+	float: none;
+	display: inline-block; 
+/*Se agrega esto cuando en el grid de bootstrap se le ponde col-md-4 por el espacio que agrega inline-block */
+	margin-left: -4px;
+}
+
+a,.azulM{
+	color: #5158CC;
+}
+
+#principal img{
+	height: 25em;
+
+}
+
+.vete-arriba{
+	vertical-align: top; 
+}
+
+.mediano{
+	font-size: 1.5em;
+}
+
+.mediano2{
+	font-size: 2em;
+}
+
+.cafeM2{
+	color: #411509;
+}
+
+/** PARA LAS ANMACIONES DE ANIMATE.CSS***/
+.retraso-1{
+	-webkit-animation-delay:.5s;
+	-moz-animation-delay:.5s;
+	animation-delay: .5s; 
+}
+
+.retraso-2{
+	-webkit-animation-delay:1s;
+	-moz-animation-delay:1s;
+	animation-delay:1s; 
+}
+
+/* clase info*/
+#info{
+	height: 350px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 0;
+}
+
+#info .contenedor{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#info p{
+	color: white;
+}

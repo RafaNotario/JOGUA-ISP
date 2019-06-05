@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+
+.retraso-2{
+	-webkit-animation-delay:3s;
+	-moz-animation-delay:3s;
+	animation-delay:3s; 
+}
+
+.mySlides{
+	height: 100%;
+}
+
+
+#img img{
+	width: 100%;
+	height: 150px;
+	cursor: pointer;
+}
+
+#img a:hover{
+	background: rgba(51,51,51,0.5);
+}
+
+.pos{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+</style>
+<body>
+
+<div id="img" class="pos">
+<p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+
+<a href="#">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/Honeywell.png">
+</a>
+<a href="http://www.w3schools.com/css/css_boxmodel.asp">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/icom.png">
+</a>
+<a href="">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/Kenwood.png">
+</a>
+<a href="">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/MERIK.jpg">
+</a>
+<a href="">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/ubiquiti.jpg">
+</a>
+<a href="">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/epcom.jpg">
+</a>
+<a href="">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/hikvision.jpg">
+</a>
+<a href="">
+	<img class="mySlides animated fadeIn .retraso-2" src="imgMarcas/syscom.png">
+</a>
+
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
+

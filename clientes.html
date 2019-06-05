@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<title> JOGUA </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css ">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,700,700italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/soloMenu.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+	img{
+		width: 200px;
+		height: 200px;
+	}
+</style>
+
+</head>
+	<body>
+		<script>
+  			window.fbAsyncInit = function() {
+    			FB.init({
+      				appId      : '1221665031198109',
+      				xfbml      : true,
+      				version    : 'v2.5'
+    			});
+  			};
+
+  			(function(d, s, id){
+     			var js, fjs = d.getElementsByTagName(s)[0];
+     			if (d.getElementById(id)) {return;}
+     			js = d.createElement(s); js.id = id;
+     		//en_US ingles
+     			js.src = "//connect.facebook.net/es_LA/sdk.js";
+     			fjs.parentNode.insertBefore(js, fjs);
+   			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+	<header>
+		<div class="contenedor"><!--  class="icon-guidedog" -->
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+		
+			<nav class="menu espacio-derecha">
+				<a href="index.html"> Inicio </a><!--etiqueta menu.a en menu.css-->
+				<a href="servicios.html"> Servicios </a>
+				<a href="#"> Clientes </a>
+				<a href="nosotros.html"> Nuestra Empresa </a>
+				<a href="/Candita/login.php"> Login </a>
+			</nav>  
+		</div>
+	</header>
+
+<!-- Creamos este modal antes, para utilizarlo con jquery
+	<div class="modal">
+	<img src="CSJogua/Camaras.jpg" class="modal__img">
+	<div class="modal__boton"> Z </div>
+	</div>
+
+-->
+	<main>
+		<section class="container text-center">
+			<h1 class="espacio-arriba"> Clientes Satisfechos </h1>
+
+<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********
+		<div class="col-md-3 inline-block">
+			<article class="text-center animated fadeIn">
+				<h3 class="pacifico"> Azul Ceramica </h3>
+				<img src="imgClientes/azul_ceramica.jpg" class="quitar-float">
+				<p>
+					<strong> $2000.00 </strong>
+				</p>
+			</article> 
+		</div>
+-->
+
+			<div class="row">
+				<div class="col-md-3 inline-block"><!--  col-sm-4 inline-block-->
+					<article class="animated fadeIn">
+						<h3 class="pacifico"> Azul Ceramica </h3>
+						<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********-->
+						<img src="imgClientes/azul_ceramica.jpg" class="quitar-float">
+						<p>
+					
+							<strong> <a href="http://www.cruzazul.com.mx/2008/grupoCruzAzul/azulCeramica.aspx">
+							Sitio Web
+							</a>
+							</strong>
+						</p>
+					</article> 
+				</div>
+		
+				<div class="col-md-3 inline-block"><!--  col-sm-4 inline-block-->
+					<article class="animated fadeIn">
+						<h3 class="pacifico"> Hotel Candita </h3>
+						<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********-->
+						<img src="imgClientes/Candita.png" class="quitar-float">
+						<p>
+							<strong> <a href="http://hotelcandita.com/"> Sitio Web </a> </strong>
+						</p>
+					</article> 
+				</div>
+
+				<div class="col-md-3 inline-block"><!--  col-sm-4 inline-block-->
+					<article class="animated fadeIn">
+						<h3 class="pacifico"> Telcel </h3>
+						<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********-->
+						<img src="imgClientes/telcel.png" class="quitar-float">
+						<p>
+							<strong> Sitio Web </strong>
+						</p>
+					</article> 
+				</div>
+
+				<div class="col-md-3 inline-block"><!--  col-sm-4 inline-block-->
+					<article class="animated fadeIn">
+						<h3 class="pacifico"> Qualissen </h3>
+						<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********-->
+						<img src="imgClientes/CliQualissen.jpg" class="quitar-float">
+						<p>
+							<strong> <a href="#">
+								Sitio Web
+								</a>
+							</strong>
+						</p>
+					</article> 
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-3 inline-block"><!--  col-sm-4 inline-block-->
+					<article class="animated fadeIn">
+						<h3 class="pacifico"> Cruz Azul </h3>
+						<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********-->
+						<img src="imgClientes/CementoCA.png" class="quitar-float">
+						<p>
+							<strong> <a href="http://www.cruzazul.com.mx/2008/homePrueba/Default.aspx">
+								Sitio Web
+								</a>
+							</strong>
+						</p>
+					</article> 
+				</div>
+
+
+			<div class="col-md-3 inline-block"><!--  col-sm-4 inline-block-->
+				<article class="animated fadeIn">
+					<h3 class="pacifico"> Centro Medico </h3>
+					<!-- LLeva col-md-5 col-xs-3 si se quiere hacer mas pequeñas las imagenes *********-->
+					<img src="imgClientes/CentroM.jpg" class="quitar-float">
+					<p>
+						<strong> <a href="http://www.centromedicotk.com.mx/">
+							Sitio Web
+							</a>
+						</strong>
+					</p>
+				</article> 
+			</div>
+			</div>
+
+
+
+		</section>
+	</main>
+
+	<section id="info">
+		<div class="contenedor">
+			<p>
+				Envianos un correo:
+				<a href="mailto:Sanflo8@hotmail.com"> Sanflo8@hotmail.com</a>
+				<br>
+				O llamanos:
+				2491308947 <br>
+				Presupuestos, asesorias, dudas, quejas, comentarios.
+				<br>
+
+				<div class="fb-like" data-href="https://www.facebook.com/JOGUAST/?fref=ts" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+			</p>
+			<br>
+		</div>
+	</section>
+
+
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=1221665031198109";
+  		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	</body>
+</html>

@@ -1,0 +1,79 @@
+#banner{
+	margin-top: 10px;/*para que comience a partir de la anchura del menu*/
+	margin-bottom: 5px;
+	position: relative;
+	background:#fff;/*0E7E8E*/
+}
+
+#banner img{
+	width: 100%;
+	height: 100%;
+	
+} 
+
+#banner .contenedor{/*contenedor se va a posisionar en base a .banner de arriba */
+	padding: none;
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;/*era #0E7E8E blanco*/
+}
+
+#banner h2{
+	font-size: 28px;
+
+}
+
+
+/* Estilos de slider*/
+.mySlides{
+	height: 150%;
+}
+
+
+#img img{
+	width: 150%;
+	height: 500px;
+	cursor: pointer;
+}
+
+
+.pos{
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+@media(min-width: 768px){
+	#img img{
+	width: 50%;
+	height: 90px;
+	cursor: pointer;
+	transform: translateX(50%) translateY(-50%);
+}
+ .pos{
+ 	position: relative;
+ }
+}
+
+@media(min-width: 320px)
+{
+	#img img
+	{
+	width: 50%;
+	height: 75px;
+	cursor: pointer;
+	transform: translateX(50%) translateY(-20%);
+	margin-top: 10px;
+}
+ .pos{
+ 	position:relative;
+
+ }
+
+ #banner {
+ 	margin-top: 50px;
+ }
+}

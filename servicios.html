@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+	<title> JOGUA </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css ">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,700,700italic' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/soloMenu.css">
+	<link rel="stylesheet" type="text/css" href="css/servicios.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1221665031198109',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     //en_US ingles
+     js.src = "//connect.facebook.net/es_LA/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+	<header>
+		<div class="contenedor"><!--  class="icon-guidedog" -->
+			<input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+		
+			<nav class="menu espacio-derecha">
+				<a href="index.html"> Inicio </a><!--etiqueta menu.a en menu.css-->
+				<a href="#"> Servicios </a>
+				<a href="clientes.html"> Clientes </a>
+				<a href="nosotros.html">	Nuestra Empresa </a>
+				<a href="/Candita/login.php"> Login </a>
+		</nav>  
+		</div>
+	</header>
+
+<!-- Creamos este modal antes, para utilizarlo con jquery
+	<div class="modal">
+	<img src="CSJogua/Camaras.jpg" class="modal__img">
+	<div class="modal__boton"> Z </div>
+	</div>
+-->
+
+<h1 class=" text-center espacio-arriba lato grande"> Nuestros Servicios </h1>
+
+<section >
+	<ul class="galeria quitar-float">
+		<div class="row">
+			<h3> Disminuya sus gastos en comunicacion. </h3>
+
+			<li class="galeria__item">
+				<img src="CSJogua/Radiocomunicacion.jpg" class="galeria__img">
+			</li>
+
+			<p class="cafeM2"> 
+				La Nueva Generación “NEXEDGE” de KENWOOD supera por mucho a  la tecnología de la competencia,  principalmente porque los radios no requieren de un repetidor para operar en modo digital y ofrecen interoperabilidad entre las tecnologías actualmente en uso y las de más reciente aparición. El radio NEXEDGE funciona en forma 100 % digital, con o sin repetidor (radio a radio), pero la ventaja más importante es que está preparado para operar en modo troncal (Digital y analógico LTR), así como multisitio (6 sitios).
+			</p>
+		</div>
+
+		<div class="row">
+			<h3> Tenga el control de sus unidades. </h3>
+			<li class="galeria__item">
+				<a name="gps">
+					<img src="CSJogua/GPS.jpg" class="galeria__img">
+				</a>
+			</li>
+
+			<p class="cafeM2"> 
+				Conozca en cualquier momento la ubicacion de su unidad mediante mensajes de texto o con una modica mensualidad haga uso de la pltaforma web, vea la ruta que se hizo, consulte el nivel de combustible, y en caso de robo apague el vehiculo via SMS.
+			</p>
+
+			<div class="col-md-4 col-sm-4">
+				Plataforma de monitoreo:
+				<video class="Tam" src="imgTrabajosJog/video-GPS.mp4" width="500" preload loop controls></video>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3> Puntos de acceso a internet donde otros no llegan. </h3>
+
+			<li class="galeria__item">
+				<a name="enlaces">
+				<img src="CSJogua/RedeaAmplia.jpg" class="galeria__img">
+				</a>
+			</li>
+		
+			<p class="cafeM2"> 
+				Soluciones para interconectar redes de datos, transmisión y/o monitoreo remoto de sistemas de seguridad (videovigilancia) e internet inalámbrico.
+
+				Puntos de Acceso (Access Point), Puentes (bridges), Servidores, Ruteadores (Routers), Tarjetas de red (Land Cards), antenas, amplificadores y cables. Todo lo necesario para instalar un Sistema Inalámbrico Móvil.		
+			</p>
+		</div>
+
+		<div class="row">
+			<h3> Desarrollo profesional de sistemas a la medida. </h3>
+			<li class="galeria__item">
+				<a name="desarrollo">
+				<img src="CSJogua/DesarrolloSW.png" class="galeria__img">
+				</a>
+			</li>
+
+			<p class="cafeM2"> 
+				Desarrollamos sistemas locales y sistemas web a la medida de sus necesidades, acceda a sus datos de venta, de inventario, o cartera de clientes desde cualquier dispositivo conectado a internet con la mayor seguridad, haga reportes de ventas mensuales, semanales, por dia; Por que hoy en dia el exito de un negocio consiste en la manera en que maneja su informacion. 
+			</p>
+
+
+			<div class="col-md-4 col-sm-4">
+				Sistema de ventas de jitomates:
+				<video class="Tam" src="CSJogua/Captura4GrupoTrima.mp4" width="500" preload loop controls></video>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3> Tecnologia para medir la eficiencia de su personal. </h3>
+			<li class="galeria__item">
+				<img src="CSJogua/CAcceso.jpg" class="galeria__img">
+			</li>
+
+			<p class="cafeM2"> 
+				Ofrece Equipos y Sistemas de Control de Acceso Comercial e Industrial, que le darán mayor seguridad y control en áreas restringidas, contamos con detectores de metal, barras de panico para puertas, chapas magnéticas, lectoras de tarjetas, teclados para acceso, lectoras de huella dactilar, botones para activación de puertas, tarjetas para acceso, verificador de rutina para vigialntes y software para control de equipos automatizados.			
+			</p>
+		</div>
+
+		<div class="row">
+			<h3>Vigile su casa o negocio con cualquier dispositivo movil. </h3>
+			<li class="galeria__item">
+				<a name="camaras">
+					<img src="CSJogua/Camaras.jpg" class="galeria__img">
+				</a>
+			</li>
+
+			<p class="cafeM2"> 
+				Monitoree desde cualquier lugar el bienestar de su familia y hogar o el correcto funcionamiento de su negocio, con los equipos profesionales de videovigilancia usted podra ver lo que sucede en tiempo real, con una gran calidad de imagen.   
+			</p>
+		</div>
+
+		<div class="row">
+			<h3> Automatizacion de calidad. </h3>
+			<li class="galeria__item">
+				<a name="automatiza">
+					<img src="CSJogua/Merik.jpg" class="galeria__img">
+				</a>
+			</li>
+			<p class="cafeM2"> 
+				Ahorre tiempo y esfuerzo con la automatizacion de portones, con nuestros instaladores profesionales y equipos de la mejor calidad, haga que su porton ya sea abatible o corredizo abra o cierre con un simple clic. 
+			</p>
+
+			<div class="col-md-4 col-sm-4">
+				Zaguan corredizo:
+				<video src="imgTrabajosJog/video-Rodo2.mp4" width="300" height="300" preload loop controls></video>
+			</div>
+
+			<div class="col-md-4 col-sm-4">
+				Zaguan abatible:
+				<video src="imgTrabajosJog/video-ZagDigiseg2.mp4" width="300" height="300" preload loop controls></video>
+			</div>
+		</div>
+
+		<div class="row">
+			<h3> Seguridad extra para su patrimonio. </h3>
+			<li class="galeria__item">
+				<img src="CSJogua/Cerraduras.jpg" class="galeria__img">
+			</li>
+
+			<p class="cafeM2"> 
+				Las chapas magnéticas generalmente utilizadas en el 80% de las instalaciones, son abiertas
+				en caso de falla, y ésta es muy utilizada por casos de seguridad del personal, ya que en casos de incendio o terremotos es necesario que bajo esta condición de alarma, al momento de cortar el suministro eléctrico nuestras puertas estén abiertas para una fácil salida o evacuación.
+			</p>
+		</div>
+
+		<div class="row">
+			<h3> sistemas Anti-Intrusion. </h3>
+			<li class="galeria__item">
+				<img src="CSJogua/PanelAlarma.jpg" class="galeria__img">
+			</li>
+
+			<p class="cafeM2"> 
+				Honeywell Security and Communications es un fabricante líder de sistemas de alarmas de seguridad para los mercados industrial, comercial y doméstico.
+
+				Nuestra cartera, que sitúa a Honeywell entre los líderes del mercado, incluye: la gama Galaxy, la completa gama de sensores, PIRs, detectores de rotura de cristales y de sonido de IntelliSense Dual Tec®, el sistema de alarma inalámbrico Domonial para aplicaciones residenciales, la amplia gama de la oferta en seguridad doméstica también incluye paneles Captiv-8, Optima y Logic, así como el equipo de detección, señalización y observación Viper, líder en el mercado.
+			</p>
+		</div>
+
+		<div class="row ">
+			<h3> Ahorre en consumo de energia electrica. </h3>
+			<li class="galeria__item">
+				<a name="radios">
+					<img src="CSJogua/paneles.jpg" class="galeria__img">
+				</a>
+			</li>
+
+			<p class="cafeM2"> 
+				Funcionamiento y Aplicaciones de la ENERGIA SOLAR. Un sistema fotovoltáico es un conjunto de dispositivos cuya función es transformar la energía solar directamente en energía eléctrica, acondicionando esta última a los requerimientos de una aplicación determinada.
+				Uso Doméstico.- Lo mismo para hogares en el medio rural, donde todavia no llega el tendido de las líneas de fuerza eléctrica o en islas o lugares apartados. También para aquellos convencidos del cuidado de la ecología.
+				Sistemas de Bombeo de Agua que han ayudado al crecimiento y desarrollo de zonas agrícolas donde la electrificación es escasa o nula. También se encuentra en Sistemas Híbridos junto con los Generadores Eólicos que preveen de electricidad en zonas donde el nivel del sol y/o aire al año permiten este tipo de aplicación.
+			</p>
+		</div>
+
+	</ul>
+</section>
+
+<section id="info">
+	<div class="contenedor">
+		<p>
+			Envianos un correo:
+			<a href="mailto:Sanflo8@hotmail.com"> Sanflo8@hotmail.com</a>
+			<br>
+			O llamanos:
+			2491308947
+			<br>
+			Presupuestos, asesorias, dudas, quejas, comentarios.
+			<br>
+
+			<div class="fb-like" data-href="https://www.facebook.com/JOGUAST/?fref=ts" data-layout="	standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+		</p>
+		<br>
+	</div>
+</section>
+
+	<script>(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=1221665031198109";
+  		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<script type="text/javascript" src="js/modal.js"></script>
+
+</body>
+</html>
